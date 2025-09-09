@@ -1,0 +1,19 @@
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  margin-top: 40px;
+}
+.header-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    font-size: 16px;
+    color: #ffffff;
+    &:hover {
+      color: $setting_primary_color;
+    }
+  }
+}

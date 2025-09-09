@@ -1,0 +1,15 @@
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/variables";
+
+@import "sass/base/reset";
+@import "sass/base/typography";
+@import "sass/base/base";
+
+@import "sass/component/landing";
+@import "sass/component/main";
+@import "sass/component/video";
+@import "sass/component/why";
+@import "sass/component/reviews";
+@import "sass/component/form.scss";
+@import "sass/component/header.scss";
+@import "sass/component/footer.scss";

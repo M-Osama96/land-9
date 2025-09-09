@@ -1,0 +1,98 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 70px;
+  @include xs {
+    padding-bottom: 40px;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    @include sm {
+      gap: 30px;
+    }
+    @include xxs {
+      flex-direction: column;
+    }
+    .contact-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      &:hover {
+        color: $setting_primary_color;
+      }
+      i {
+        font-size: 30px;
+      }
+      .contact-number {
+        font-size: 20px;
+      }
+    }
+  }
+  .footer-logo {
+    margin: 40px 0 30px;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 17px;
+      background-color: #000000;
+      &:hover {
+        background-color: $setting_primary_color;
+      }
+    }
+    i {
+      color: #ffffff;
+      font-size: 18px;
+    }
+  }
+  .licence {
+    margin: 15px 0 5px;
+    @include xs {
+      order: 5;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @include xs {
+      margin-top: 20px;
+    }
+    li {
+      position: relative;
+      &:hover {
+        color: $setting_primary_color;
+      }
+    }
+    .privacy {
+      &::after {
+        content: "";
+        height: 15px;
+        width: 1px;
+        margin: 0 10px;
+        background-color: #808080;
+        position: absolute;
+      }
+    }
+  }
+}

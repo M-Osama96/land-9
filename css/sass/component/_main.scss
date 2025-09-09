@@ -1,0 +1,124 @@
+.main-section {
+  padding: 110px 0;
+  @include sm {
+    padding: 50px 0;
+  }
+  @include xs {
+    padding: 30px 0;
+  }
+  .main-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .main-title {
+      font-size: 36px;
+      font-weight: $weight_extrabold;
+      text-align: center;
+      @include sm {
+        font-size: 28px;
+      }
+      @include xs {
+        font-size: 24px;
+        margin-bottom: 26px;
+      }
+    }
+    .main-p {
+      font-size: 22px;
+      padding: 0 200px;
+      text-align: center;
+      margin: 0;
+      @include sm {
+        font-size: 18px;
+        padding: 0 100px;
+      }
+      @include xs {
+        font-size: 16px;
+        padding: 0;
+      }
+    }
+    .main-price {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+      margin: 60px 0 40px;
+      @include xs {
+        margin: 30px 0 20px;
+      }
+      @include xxs {
+        gap: 0;
+      }
+
+      strong {
+        font-size: 36px;
+        font-weight: $weight_extrabold;
+        @include sm {
+          font-size: 24px;
+        }
+        @include xs {
+          font-size: 18px;
+        }
+      }
+      del {
+        font-size: 24px;
+        font-weight: $weight_light;
+        color: #808080;
+        @include sm {
+          font-size: 18px;
+        }
+        @include xs {
+          font-size: 14px;
+        }
+      }
+      span {
+        border-radius: 15px;
+        background-color: #f34343;
+        color: white;
+        padding: 0 10px;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        @include sm {
+          font-size: 12px;
+          height: 25px;
+        }
+      }
+    }
+    .buy-now {
+      font-size: 22px;
+      font-weight: $weight_bold;
+      color: white;
+      background-color: $setting_primary_color;
+      height: 60px;
+      padding: 0 30px;
+      width: fit-content;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.3s ease-in-out;
+      i {
+        font-size: 36px;
+      }
+      &:focus {
+        color: #fff;
+      }
+      &:hover {
+        background-color: $setting_secondary_color;
+        color: #fff;
+      }
+      @include sm {
+        font-size: 18px;
+        height: 45px;
+        gap: 5px;
+        i {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
