@@ -9,10 +9,17 @@
   border-radius: 25px;
   overflow: hidden;
   position: relative;
-  &:hover {
-    cursor: pointer;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  &:hover .video-img {
     transform: scale(1.05);
   }
+  .video-img {
+    transition: all 0.3s ease-in-out;
+  }
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
 
   &::before {
     content: "\f144";
@@ -25,6 +32,9 @@
     z-index: 2;
     color: #ffffff;
     font-size: 100px;
+    overflow: hidden;
+    pointer-events: none;
+
     @include xs {
       font-size: 50px;
     }
@@ -43,4 +53,7 @@
   &:hover::after {
     opacity: 0;
   }
+}
+.video-img:hover {
+  transform: scale(1.05);
 }

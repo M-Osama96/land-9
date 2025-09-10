@@ -512,10 +512,14 @@ iframe {
   border-radius: 25px;
   overflow: hidden;
   position: relative;
-}
-.video:hover {
+  transition: all 0.3 ease;
   cursor: pointer;
+}
+.video:hover .video-img {
   transform: scale(1.05);
+}
+.video .video-img {
+  transition: all 0.3s ease-in-out;
 }
 .video::before {
   content: "\f144";
@@ -528,6 +532,8 @@ iframe {
   z-index: 2;
   color: #ffffff;
   font-size: 100px;
+  overflow: hidden;
+  pointer-events: none;
 }
 @media (max-width: 767px) {
   .video::before {
@@ -547,6 +553,10 @@ iframe {
 }
 .video:hover::after {
   opacity: 0;
+}
+
+.video-img:hover {
+  transform: scale(1.05);
 }
 
 .why-section {
@@ -586,6 +596,11 @@ iframe {
   align-items: center;
   margin: auto;
   aspect-ratio: 492/404;
+}
+@media (max-width: 767px) {
+  .why-section .why-cont .why-img {
+    order: 2;
+  }
 }
 .why-section .why-cont .why-text {
   display: flex;

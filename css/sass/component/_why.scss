@@ -27,6 +27,9 @@
       align-items: center;
       margin: auto;
       aspect-ratio: 492/404;
+      @include xs {
+        order: 2;
+      }
     }
     .why-text {
       display: flex;
